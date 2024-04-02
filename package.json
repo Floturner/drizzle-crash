@@ -1,0 +1,23 @@
+{
+  "name": "drizzle-crash",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "db:generate": "drizzle-kit generate:pg",
+    "db:migrate": "tsx src/drizzle/migrate.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.30.6",
+    "pg": "^8.11.4",
+    "postgres": "^3.4.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.2",
+    "drizzle-kit": "^0.20.14",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.3"
+  }
+}
